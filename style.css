@@ -25,7 +25,7 @@ body {
 
     color:white;
 
-    height:199px;
+    height:auto;
 
     font-family:gangbang;
 }
@@ -63,4 +63,8 @@ body {
 
     font-weight:200;
     text-decoration:line-through;
+}
+
+.topspace {
+    margin-top:16vh;
 }

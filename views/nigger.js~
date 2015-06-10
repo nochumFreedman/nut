@@ -1,0 +1,11 @@
+'use strict';
+
+angular.module('fgk')
+    .controller('NiggerCtrl', function($scope){
+
+	$scope.shit = 'nigger';
+
+	
+
+    });
+

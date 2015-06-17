@@ -1,19 +1,20 @@
 'use strict';
  
-angular.module('fgk', ['ui.router'])
+angular.module('pro', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.otherwise("/nigger");
+	$urlRouterProvider.otherwise("/");
 
 	$stateProvider
-	    .state('faggot', {
-		url: "/faggot",
-		templateUrl: "views/list.html",
-		controller: 'FaggotCtrl as fgt'
+	    .state('login', {
+		url: "/",
+		templateUrl: "views/login.html",
+		controller: 'LoginCtrl as login'
 	    })
-	    .state('nigger', {
-		url: "/nigger",
-		templateUrl: "views/list.html",
-		controller: 'NiggerCtrl as ngr'
+	    .state('home', {
+		url: "/home",
+		templateUrl: "views/home.html",
+		controller: 'HomeCtrl as main'
+//		resolve:{usr:function(auth){return usr.confirmLogin();}}
 	    });
     });

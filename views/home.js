@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pro')
+angular.module('nut')
     .controller('HomeCtrl', function($scope, $http, $state, $stateParams){
 
 	

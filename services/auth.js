@@ -1,17 +1,18 @@
 'use strict';
 
 angular.module('nut')
-  .service('auth', function($http, $q){
+    .service('auth', function($http, $q){
 
-      var that = this;
+	var that = this;
+	
 
-      this.confirmLogin = function(){
-	  var def = $q.defer();
+	this.confirmLogin = function(){
+	    var def = $q.defer();
 
-	  // check fb/google login state
+	    // check fb/google login state
 
-	  return def.promise;
-      };
+	    return def.promise;
+	};
+	
+    });
 
-
-  });

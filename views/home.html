@@ -1,3 +1,18 @@
-<div>
-
-</div>
+<table class="table table-bordered">
+  <thead>
+    <th>no.</th>
+    <th>name</th>
+    <th>type</th>
+    <th>protein</th>
+    <th>carbs</th>
+    <th>fat</th>
+  </thead>
+  <tr ng-repeat="nut in nuts" ng-class="tableClass($index)">
+    <td>{{$index+1}}</td>
+    <td>{{nut.name}}</td>
+    <td>{{nut.type}}</td>
+    <td>{{nut.protein}}</td>
+    <td>{{nut.carbs}}</td>
+    <td>{{nut.fat}}</td>
+  </tr>
+</table>
